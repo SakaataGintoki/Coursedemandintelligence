@@ -422,7 +422,7 @@ st.markdown(f"""
     <span><span class='status-dot'></span>Live</span>
     <span>Avg R² {avg_r2:.3f}</span>
     <span>MAE ✓ {mae_pass}/10</span>
-    <span>Rishab Singh · 103441</span>
+    <span>Rishab Singh · 10441</span>
     <span>{datetime.now().strftime('%d %b %Y')}</span>
   </div>
 </div>
@@ -509,7 +509,7 @@ with tab1:
     b1,b2=st.columns([1,2])
     with b1:
         st.markdown("Upload a CSV to predict multiple courses at once.")
-        tmpl=pd.DataFrame([{'course_name':'AI & ML','semester':3,'faculty_rating':4.2,'previous_enrollment':70,'course_difficulty':3,'is_elective':1,'has_lab':0,'industry_demand':9,'year':2024,'season':'Fall'},{'course_name':'Data Science','semester':4,'faculty_rating':4.0,'previous_enrollment':60,'course_difficulty':4,'is_elective':1,'has_lab':1,'industry_demand':9,'year':2024,'season':'Spring'}])
+        tmpl=pd.DataFrame([{'course_name':'AI & ML','semester':3,'faculty_rating':4.2,'previous_enrollment':70,'course_difficulty':3,'is_elective':1,'has_lab':0,'industry_demand':9,'year':2026,'season':'Fall'},{'course_name':'Data Science','semester':4,'faculty_rating':4.0,'previous_enrollment':60,'course_difficulty':4,'is_elective':1,'has_lab':1,'industry_demand':9,'year':2026,'season':'Spring'}])
         buf=io.StringIO(); tmpl.to_csv(buf,index=False)
         st.download_button("↓ Template CSV",buf.getvalue(),file_name='template.csv',mime='text/csv')
     with b2:
