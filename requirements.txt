@@ -5,3 +5,4 @@ scikit-learn>=1.2.0
 plotly>=5.15.0
 joblib>=1.2.0
 pyngrok>=5.0.0
+matplotlib
